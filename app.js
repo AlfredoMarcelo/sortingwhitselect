@@ -34,8 +34,8 @@ sortButton.addEventListener("click", () => {
 function sortList(arr = []) {
   console.log(arr)
   let min = 0;
-  while (min < arr.length - 1) {
-    for (let i = min + 1; i < arr.length - 1; i++) {
+  while (min < arr.length ) {
+    for (let i = min + 1; i < arr.length ; i++) {
       if (arr[min].number > arr[i].number) {
         let aux = arr[min].number;
         arr[min].number = arr[i].number;
